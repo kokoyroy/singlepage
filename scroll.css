@@ -1,0 +1,53 @@
+body {
+  overflow-y: hidden !important;
+}
+
+section {
+  font-size: 65px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+section p {
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+section:nth-child(1) {
+  background-image: url("https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section:nth-child(2) {
+  background-image: url("https://images.pexels.com/photos/2868441/pexels-photo-2868441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section:nth-child(3) {
+  background-image: url("https://images.pexels.com/photos/6992/forest-trees-northwestisbest-exploress.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section:nth-child(4) {
+  background-image: url("https://images.pexels.com/photos/2674052/pexels-photo-2674052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+button {
+  border: none;
+  width: 10%;
+  height: 5%;
+  background-color: tomato;
+}
+/*# sourceMappingURL=scroll.css.map */

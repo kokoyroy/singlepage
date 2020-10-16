@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="scroll.css">
+
+</head>
+
+<body>
+
+
+  <container id="fullpage">
+    <section>
+      <div class="wow fadeInLeft">One Page Website</div>
+      <p class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, deleniti suscipit
+        possimus id accusantium illum, fugit laborum veritatis iure, numquam inventore dolor ratione exercitationem
+        optio similique cupiditate nam ipsam magnam!</p>
+        <button>gamo to diaolo mou</button>
+    </section>
+    <section>
+      <div class="wow fadeInLeft">With cool navigation</div>
+      <p class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, deleniti suscipit
+        possimus id accusantium illum, fugit laborum veritatis iure, numquam inventore dolor ratione exercitationem
+        optio similique cupiditate nam ipsam magnam!</p>
+    </section>
+    <section>
+      <div class="wow fadeInLeft">Scroll with smooth</div>
+      <p class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, deleniti suscipit
+        possimus id accusantium illum, fugit laborum veritatis iure, numquam inventore dolor ratione exercitationem
+        optio similique cupiditate nam ipsam magnam!</p>
+    </section>
+    <section>
+      <div class="wow fadeInLeft">using Css $ All</div>
+      <p class="wow fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, deleniti suscipit
+        possimus id accusantium illum, fugit laborum veritatis iure, numquam inventore dolor ratione exercitationem
+        optio similique cupiditate nam ipsam magnam!</p>
+    </section>
+
+
+  </container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      //activate wow.js
+      new WOW().init();
+
+      //activate fullpage.js
+      $('#fullpage').fullpage({
+        scrollBar: true,
+        navigation: true,
+        navigationTooltips: ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4'],
+        loopBottom: true,
+        sectionSelector: 'section'
+      });
+
+      //apply color to each section from array
+      int = -1;
+      color_array = ['#1abc9c', '#c0392b', '#9b59b6', '#3498db', '#f1c40f', '#16a085'];
+
+      $('section').each(function () {
+        int++
+        $(this).addClass('grid-item-' + int).css('background-color', color_array[int]);
+      });
+
+    });
+
+    Resources
+
+
+  </script>
+</body>
+
+</html>
